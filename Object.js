@@ -1,5 +1,5 @@
-var myObject = {};
-var myObject2 = new Object(); //also work but literal noatation is better
+var myObject = {}; //literal
+var myObject2 = new Object(); //constructor also work but literal notation is better
 
 // add keys to the object
 myObject.param1 = 'paramValue'; //dot notation
