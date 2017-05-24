@@ -1,12 +1,12 @@
-//Array 
+//Array
 
 //WARNING
 console.log([1,2,3] === [1,2,3]);
-//false because an array is not a scalar value like number or string  
+//false because an array is not a scalar value like number or string
 
 const arr = [1,2,3];
 
-[1,2,3].length; //3 
+[1,2,3].length; //3
 let popped = 0;
 let shifted = 0;
 
@@ -33,7 +33,7 @@ console.log(arr);
 //join
 arr.join(); //'0,1,2,3,4'
 arr.join(',');//'0,1,2,3,4'
-arr.join('');//'01234' 
+arr.join('');//'01234'
 arr.join('@');//'0@1@2@3@4'
 [1,'2',3].join('');//'123' same thing with an array of string or number
 
@@ -51,10 +51,15 @@ var sliced = a.slice(1, 3);
 console.log(a);      // ['zero', 'one', 'two', 'three']
 console.log(sliced); // ['one', 'two']
 
+//splice
+var deletedElement = a.splice(1,2); // 2 elemenst to delete starting at index 1
+console.log(a); //[ 'zero', 'three' ]
+console.log(deletedElement); //[ 'one', 'two' ]
+
 //METHODS with callback function in argument
 
-//every used to COMAPRE 2 ARRAYS for example 
-// return a boolean exit as soon as one test is false 
+//every used to COMAPRE 2 ARRAYS for example
+// return a boolean exit as soon as one test is false
 const arr1 = ['a','b','c'];
 const arr2 = ['a','b','c'];
 const areEquals = arr1.every(function(el, index){
@@ -62,7 +67,7 @@ const areEquals = arr1.every(function(el, index){
 });
 console.log(areEquals);
 
-//forEach executes a provided function for each element 
+//forEach executes a provided function for each element
 arr1.forEach(function(el, index, array){
 	console.log(`arr1[${index}]=${el}, ${array}`);
 });
@@ -82,7 +87,7 @@ console.log(newArr2);
 
 //reduce return value result fron reduction
 result = numbers.reduce(function(accumulator, el, index, arr){
-	return accumulator += el;		
+	return accumulator += el;
 },0);
 console.log(result);
 
