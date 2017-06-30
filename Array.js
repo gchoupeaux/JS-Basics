@@ -96,6 +96,11 @@ const unsortedArray = [1,6,2,5,4,3,6];
 
 const sortedArray1 = unsortedArray.sort(compareAscending);
 console.log(sortedArray1);
-function compare(el1, el2){
+
+function compareAscending(el1, el2){
 	return el1-el2;
+}
+
+function compareDescending(el1, el2){
+	return el2-el1;
 }

@@ -2,9 +2,12 @@ var myObject = {}; //literal
 var myObject2 = new Object(); //constructor also work but literal notation is better
 
 // add keys to the object
-myObject.param1 = 'paramValue'; //dot notation
-myObject.param2 = 2;
+myObject.key1 = 'keyValue'; //dot notation
+myObject.key2 = 2;
 myObject['key3'] = [1,2,3,4]; //bracket notation
+
+// delte key
+delete(obj[key]);
 
 //add Function
 myObject.myFunction = function(){};
@@ -26,7 +29,7 @@ me.speak(); //notice the bracket for calling the function
 
 /*-----------------------------------------------*/
 // check if an object has a property
-myObject.hasOwnProperty('param1'); //true
+myObject.hasOwnProperty('param1'); //true myObject.param1 !== undefined
 myObject.hasOwnProperty('foobar'); //false
 
 // type of
