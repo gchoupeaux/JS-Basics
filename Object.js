@@ -48,3 +48,13 @@ function Person(name, age){
 
 var gui = new Person('Gui',33);
 gui.greet();
+
+/*-----------------------------------------------*/
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+// array like object
+var obj = { 0: 'a', 1: 'b', 2: 'c' };
+console.log(Object.keys(obj)); // console: ['0', '1', '2']
+
+// array like object with random key ordering
+var anObj = { 100: 'a', 2: 'b', 7: 'c' };
+console.log(Object.keys(anObj)); // ['2', '7', '100']
